@@ -43,6 +43,19 @@ feedback, we might decided to revisit this aspect at a later point in time.
 1. Go 1.9+
 
 ## Quick start
+1. Clone this repository into your workspace
+```sh
+mkdir -p go-control-plane
+
+cd go-control-plane
+
+export GOPATH=`pwd`
+
+git clone git@github.com:envoyproxy/go-control-plane.git src/github.com/envoyproxy/go-control-plane
+
+cd src/github.com/envoyproxy/go-control-plane
+
+```
 
 1. Setup tools and dependencies
 
