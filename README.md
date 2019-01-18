@@ -66,6 +66,7 @@ make depend.install
 
 2. Generate proto files (if you update the [data-plane-api](https://github.com/envoyproxy/data-plane-api)
 dependency)
+pre requirement is that you have protobuf installed on the mac you can do this with `brew install protobuf`
 
 ```sh
 make generate
@@ -126,7 +127,7 @@ func main() {
 }
 ```
 
-As mentioned in [Scope](https://github.com/envoyproxy/go-control-plane/blob/master/README.md#scope), you need to cache Envoy configurations.  
+As mentioned in [Scope](https://github.com/envoyproxy/go-control-plane/blob/master/README.md#scope), you need to cache Envoy configurations.
 Generate the key based on the node information as follows and cache the configurations.
 
 ```go
